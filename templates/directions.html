@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Directions</title>
+</head>
+<body>
+    <h1>Directions</h1>
+    <ol>
+        {% for step in steps %}
+            <li>{{ step['html_instructions'] }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
