@@ -11,7 +11,7 @@ views = Blueprint(__name__, "views")
 
 
 data = {
-    "api_key": "AIzaSyBFmKmoW-sa6HfOXD6GPQWwl9H-sv_q3oY"
+    "api_key": ""
 }
 with open('google_maps_credentials.json', 'w') as file:
     json.dump(data, file)
