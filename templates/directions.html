@@ -3,12 +3,61 @@
 <head>
     <title>Directions</title>
 </head>
-<body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFmKmoW-sa6HfOXD6GPQWwl9H-sv_q3oY&libraries=places"></script>
+
+
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 34.0522, lng: -118.2437}, // Los Angeles coordinates
+                zoom: 9
+            });
+
+            const directionsService = new google.maps.DirectionsService();
+            const directionsRenderer = new google.maps.DirectionsRenderer({
+                map: map,
+                panel: document.getElementById('directions-container')
+            });
+
+        }
+
+        function calculateRoute(directionsService, directionsRenderer) {
+            const startLocation = document.getElementById('start-location').value;
+            const endLocation = document.getElementById('end-location').value;
+
+            directionsService.route(
+                {
+                    origin: startLocation,
+                    destination: endLocation,
+                    travelMode: 'DRIVING'
+                },
+                function(response, status) {
+                    if (status === 'OK') {
+                        directionsRenderer.setDirections(response);
+                    } else {
+                        window.alert('Directions request failed due to ' + status);
+                    }
+                }
+            );
+        }
+    </script>
+
+
+<body 
+    
+
+    onload="initMap()">
+
     <h1>Directions</h1>
     <ol>
         {% for step in steps %}
             <li>{{ step['html_instructions'] }}</li>
         {% endfor %}
     </ol>
+    
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <div id="directions-container"></div>
 </body>
 </html>
+

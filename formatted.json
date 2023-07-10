@@ -1,0 +1,51 @@
+[
+    {
+      "bounds": {
+        "northeast": {
+          "lat": 33.5427341,
+          "lng": -117.6980301
+        },
+        "southwest": {
+          "lat": 33.465502,
+          "lng": -117.7853482
+        }
+      },
+      "copyrights": "Map data ©2023",
+      "legs": [
+        {
+          "distance": {
+            "text": "7.6 mi",
+            "value": 12311
+          },
+          "duration": {
+            "text": "17 mins",
+            "value": 1015
+          },
+          "end_address": "Laguna Beach, CA, USA",
+          "end_location": {
+            "lat": 33.5427341,
+            "lng": -117.7853482
+          },
+          "start_address": "Dana Point, CA, USA",
+          "start_location": {
+            "lat": 33.4671983,
+            "lng": -117.6980948
+          },
+          "steps": [
+            {
+              "distance": {
+                "text": "7.6 mi",
+                "value": 12311
+              },
+              "duration": {
+                "text": "17 mins",
+                "value": 1015
+              },
+              "end_location": {
+                "lat": 33.5427341,
+                "lng": -117.7853482
+              },
+              "html_instructions": "Head <b>northeast</b> on <b>CA-1 N</b> toward <b>Golden Lantern</b><div style=\"font-size:0.9em\">Pass by Starbucks (on the right in 0.3 mi)</div>",
+              "polyline": {
+                "points": "_qgkE`|jmUAKQ@BXF`@BXFh@Hf@BVL|@BXNtALjAV|BL`APvAD^PrA`@rDV~BRvAVpBJ|@BZLnAF^?@BV@HPtAB`@BXHpABd@Bb@@P@ZAz@AXATGj@Gh@G\\Ol@AHAFKVKXAJQ\\Q\\QZUZABORQPSPURSNQJEBkDpBeDnBoC|AgBdAiDpBMHmEhCmGrDaCtACBC@CBGBeAn@_DbBi@Z_CxAOHa@V]Ru@b@WPw@b@a@TwAz@SL{BrAw@b@a@T]RWP}@h@UNUNUNUPSN_Ar@]Xu@n@}@x@{@z@y@|@e@h@EF_@b@UVCDSVMNKLY\\u@|@k@p@c@j@oA|AKL{AlBKLe@j@c@h@cBnBEFgArAw@~@gD`E_@d@eApAKLmAxAmAzAyGhIs@|@q@z@qA~Ae
+  

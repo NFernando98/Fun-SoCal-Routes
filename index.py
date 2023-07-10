@@ -6,12 +6,13 @@ import json
 from flask import Blueprint, render_template, request
 import folium
 from datetime import datetime
+import html
 
 views = Blueprint(__name__, "views")
 
 
 data = {
-    "api_key": ""
+    "api_key": "key: AIzaSyBFmKmoW-sa6HfOXD6GPQWwl9H-sv_q3oY"
 }
 with open('google_maps_credentials.json', 'w') as file:
     json.dump(data, file)
@@ -53,7 +54,9 @@ def directions():
     directions_result = gmaps.directions(origin, destination)
 
     # Extract the steps from the response
-    steps = directions_result[0]['legs'][0]['steps']
+    steps = directions_result[0]["legs"][0]["steps"]
+    
+
 
     return render_template('directions.html', steps=steps)
     
