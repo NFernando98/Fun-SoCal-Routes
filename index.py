@@ -63,8 +63,22 @@ def directions():
     
     
 
-
+@views.route('/directions2')
+def display_route():
+    address = 'Dana Point, California, USA'
+    geocode_result = gmaps.geocode(address)
+    start_lat = geocode_result[0]['geometry']['location']['lat']
+    start_lng = geocode_result[0]['geometry']['location']['lng']
+    
+    address = 'Laguna Beach, California, USA'
+    geocode_result = gmaps.geocode(address)
+    end_lat = geocode_result[0]['geometry']['location']['lat']
+    end_lng = geocode_result[0]['geometry']['location']['lng']
+    
+    return render_template('directions.html', start_lat=start_lat, start_lng=start_lng, end_lat=end_lat, end_lng=end_lng)
     
     
 
 
+def getLatitude(address:str):
+    return null    
